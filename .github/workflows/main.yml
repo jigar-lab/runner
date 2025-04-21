@@ -5,7 +5,7 @@ jobs:
     runs-on:
       - codebuild-repro-runner-test-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
-      - run: echo "Hello World"
+      # - run: echo "Hello World"
       - run: whoami
       - uses: actions/checkout@v3
       - uses: turbot/steampipe-action-setup@v1
